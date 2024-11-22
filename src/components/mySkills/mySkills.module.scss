@@ -1,0 +1,51 @@
+.skills__container{
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  margin-top: 90px;
+
+  .skills{
+    width: 90%;
+    max-width: 1440px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .left{
+      width: 40%;
+
+      @media (max-width: 1168px) {
+        width: 100%;
+      }
+
+      h3{
+        color: white;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px; 
+        letter-spacing: 1px;
+      }
+
+      p{
+        color: #EDCECE;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; 
+        letter-spacing: 0.252px;
+      }
+    }
+    .right{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-top: 50px;
+      @media (max-width: 1168px) {
+        gap: 50px;
+      }
+    }
+  }
+}

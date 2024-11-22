@@ -1,0 +1,114 @@
+.banner__container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  @media (max-width: 550px) {
+    margin: 0;
+  }
+  .banner{
+    width: 90%;
+    max-width: 1440px;
+    min-width: 300px;
+
+    h1{
+      width: 90%;
+      font-size: 56px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 72px;
+      letter-spacing: 1px;
+      background: linear-gradient(134deg, #3BF686 50.52%, #4CA9FF 89.58%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @media (max-width: 768px) {
+        font-size: 40px;
+        line-height: 60px;
+      }
+      @media (max-width: 550px) {
+        font-size: 35px;
+        line-height: 60px;
+      }
+    }
+    
+    .biography{
+      margin-top: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .icon{
+        width: 155px;
+        height: 155px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(to right, #62D9FF, #3BF686);
+
+        border-radius: 50%;
+      
+        .image{
+          width: 95%;
+          height: 95%;
+          background: #3A3636;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+      }
+      
+      .info{
+        h3{
+          font-size: 28px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 72px; 
+          letter-spacing: 1px;  
+          color: white;
+        }
+        p{
+          width: 600px;
+          color: #D6D6D6;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 0.252px;
+
+          @media (max-width: 650px) {
+            width: 90%;
+          }
+
+          span{
+            color: #80FFA3;
+          }
+        }
+      }
+
+      .socials{
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px;
+        letter-spacing: 1px;
+        color: white;
+        .icons{
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          div{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

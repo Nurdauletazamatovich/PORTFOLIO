@@ -1,0 +1,50 @@
+.project{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @media (max-width: 1207px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .left{
+    img{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+  .right{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    .stacks{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      p{
+        padding: 4px 24px;
+        background: white;
+        color: black;
+        border-radius: 50px;
+        font-size: 10px;
+      }
+    }
+    h2{
+      color: white;
+      margin: 10px 0;
+    }
+    button{
+      width: 250px;
+      height: 40px;
+      background: linear-gradient(to right, #62D9FF, #3BF686);
+      color: black;
+      border: 0;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  }
+}

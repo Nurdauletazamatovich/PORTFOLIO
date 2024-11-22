@@ -1,0 +1,18 @@
+.portfolio_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  @media (max-width: 550px) {
+    margin: 0;
+  }
+  .portfolio{
+    width: 90%;
+    max-width: 1440px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
